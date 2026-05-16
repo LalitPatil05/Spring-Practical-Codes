@@ -6,13 +6,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class Student {
 	
-	@Value("Puja")
+	@Value("Raj")
 	private String name;
 	
 	@Value("101")
 	private int rollno;
 	
-	@Value("puja@gmail.com")
+	@Value("raj@gmail.com")
 	private String email;
 	
 	public String getName() {
