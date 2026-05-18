@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean class="in.infogalaxy.beans.Address" id="addrId">
+        	<constructor-arg value="15"></constructor-arg>
+        	<constructor-arg value="Shanti Nagar"></constructor-arg>
+        	<constructor-arg value="Shahada"></constructor-arg>
+        	<constructor-arg value="425409"></constructor-arg>
+        </bean>
+        
+        <bean class="in.infogalaxy.beans.Student" id="studId">
+        	<constructor-arg value="101"></constructor-arg>
+        	<constructor-arg value="Jayesh"></constructor-arg>
+        	<constructor-arg ref="addrId"></constructor-arg>
+        </bean>
+
+</beans>
